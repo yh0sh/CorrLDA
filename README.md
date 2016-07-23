@@ -16,20 +16,24 @@ You can run for this sample data easily in python 2.x.
 
 # Modification
 This source code is made of a C++ wrapper of Python (Cython).
+
 If you want to modify the source code (corr_lda.pyx), need to prepare the C++ compiler and run a setup.py.
 
 > python setup.py build_ext --inplace
 
 # Dataset
 The dataset in a sample folder is the articles of the [Qiita](http://qiita.com/) which is the Japanese SNS service for programmers.
+
 These articles attach a tag about main sentences, so I utilize it for content-related annotations.
+
 The dataset constitution is based on [UCI Machine Learning Repository: Bag of Words Data Set](http://archive.ics.uci.edu/ml/datasets/Bag+of+Words)
 
 # output
+
 While running, the perplexity of a model per an iteration is output to the console.
 
 Example:
-> (iteration, perplexity)
+> \#iteration, perplexity
 
 > 1 2682.5625869
 
@@ -37,16 +41,16 @@ Example:
 
 > ...
 
-You can change the save step for making the result file to edit the 'save_step' variable in run.py
+You can change the save step for making the result file by changing the 'save_step' value in run.py
 
 ### profile output
 
 - set_corpus
 
-When you can set 'True' in the 'set\_corpus' function, the profile is output to the console. 
+When setting 'True' in the 'set\_corpus' function, the profile is output to the console. 
 
 Example:
-> (docID, the number of words that are assigned to the topics in the docID document(list type), the number of words in the docID document)
+> \#docID, the number of words that are assigned to the topics in the docID document (list), the number of words in the docID document
 
 > 1 [  0.   0.   5.   3.   0.  15.   0.   0.   0.   3.   1.   8.   0.   0.   0.   6.   2.   0.   3.   9.   0.   0.   7.   0.   0.   6.   2.   0.   0.   2.   2.   0.   0.   0.   0.   2.   2.   0.   1.   0.   2.   2.   0.   0.   1.   4.   0.   3.   0.   3.] 94
 
@@ -56,10 +60,10 @@ Example:
 
 - set_supply
 
-When you can set 'True' in the 'set\_supply' function, the profile is output to the console. 
+When setting 'True' in the 'set\_supply' function, the profile is output to the console. 
 
 Example:
-> (docID, the number of annotations that are assigned to the topics in the docID document(list type), the number of noisy annotation that are assigned in the docId document, the number of annotation in the docID document)
+> \#docID, the number of annotations that are assigned to the topics(list) and the number of noisy annotation that are assigned in the docId document, the number of annotation in the docID document
 
 > 1 [ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.   0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.   0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  1.] 0.0 1
 
@@ -78,17 +82,17 @@ Example:
 
 > 
 
->    Ordered by: cumulative time
+>       Ordered by: cumulative time
 
->    List reduced from 22 to 20 due to restriction <20>
+>       List reduced from 22 to 20 due to restriction <20>
 
 > 
 
->    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+>     ncalls  tottime  percall  cumtime  percall filename:lineno(function)
 
->   1877571    0.583    0.000    4.593    0.000 _methods.py:31(_sum)
+>     1877571    0.583    0.000    4.593    0.000 _methods.py:31(_sum)
 
->   1877571    4.010    0.000    4.010    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+>     1877571    4.010    0.000    4.010    0.000 {method 'reduce' of 'numpy.ufunc' objects}
 
 >         3    0.000    0.000    0.027    0.009 warnings.py:24(_show_warning)
 
