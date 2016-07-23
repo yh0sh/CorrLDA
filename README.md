@@ -2,35 +2,35 @@
 This repository is the Python code of the Noisy Correspondence Topic Model proposed by T.Iwata (2013).
 
 # introduction
-This repository is the source code of [the Noisy Correspondence Topic Model proposed by T.Iwata (2013)](http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=6193102&url=http%3A%2F%2Fieeexplore.ieee.org%2Fiel5%2F69%2F6517838%2F06193102.pdf%3Farnumber%3D6193102).
+This repository is the source code of the Noisy Correspondence Topic Model originated from [T.Iwata et al (2013)](http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=6193102&url=http%3A%2F%2Fieeexplore.ieee.org%2Fiel5%2F69%2F6517838%2F06193102.pdf%3Farnumber%3D6193102).
 
 A probabilistic topic model for analyzing and extracting content-related annotations from noisy annotated discrete data. 
 
 This repository is the solution for the model using the Correspondence-Latent Dirichlet Allocation (corr-LDA).
 The inference is based on collapsed Gibbs Sampling.
 
-# How to use
-You can run for this sample data easily in python 2.x.
+# how to use
+Run a code using sample data easily in python 2.x.
 
 > python run.py
 
 # Modification
-This source code is made of a C++ wrapper of Python (Cython).
+The source code is made of a C++ wrapper of Python (Cython).
 
-If you want to modify the source code (corr_lda.pyx), need to prepare the C++ compiler and run a setup.py.
+If you want to modify the source code (corr_lda.pyx), you need to prepare the C++ compiler and run setup.py.
 
 > python setup.py build_ext --inplace
 
 # Dataset
-The dataset in a sample folder is the articles of the [Qiita](http://qiita.com/) which is the Japanese SNS service for programmers.
+The dataset of the sample are made by the word extraction of the articles of [Qiita](http://qiita.com/) which is Japanese SNS service for the programmers.
 
-These articles attach a tag about main sentences, so I utilize it for content-related annotations.
+These articles attach tags about main sentences, therefore these can utilize for annotations.
 
 The dataset constitution is based on [UCI Machine Learning Repository: Bag of Words Data Set](http://archive.ics.uci.edu/ml/datasets/Bag+of+Words)
 
 # output
 
-While running, the perplexity of a model per an iteration is output to the console.
+While running, the perplexity per an iteration is output to the console.
 
 Example:
 > \#iteration, perplexity
