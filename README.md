@@ -35,11 +35,11 @@ While running, the perplexity of a model per an iteration is output to the conso
 Example:
 > \#iteration, perplexity
 
-> 1 2682.5625869
+>     1 2682.5625869
 
-> 2 2144.99446438
+>     2 2144.99446438
 
-> ...
+>     ...
 
 You can change the save step for making the result file by changing the 'save_step' value in run.py
 
@@ -52,11 +52,11 @@ When setting 'True' in the 'set\_corpus' function, the profile is output to the 
 Example:
 > \#docID, the number of words that are assigned to the topics in the docID document (list), the number of words in the docID document
 
-> 1 [  0.   0.   5.   3.   0.  15.   0.   0.   0.   3.   1.   8.   0.   0.   0.   6.   2.   0.   3.   9.   0.   0.   7.   0.   0.   6.   2.   0.   0.   2.   2.   0.   0.   0.   0.   2.   2.   0.   1.   0.   2.   2.   0.   0.   1.   4.   0.   3.   0.   3.] 94
+>     1 [  0.   0.   5.   3.   0.  15.   0.   0.   0.   3.   1.   8.   0.   0.   0.   6.   2.   0.   3.   9.   0.   0.   7.   0.   0.   6.   2.   0.   0.   2.   2.   0.   0.   0.   0.   2.   2.   0.   1.   0.   2.   2.   0.   0.   1.   4.   0.   3.   0.   3.] 94
 
-> 2 [ 0.  2.  0.  0.  0.  0.  2.  0.  0.  0.  3.  0.  0.  0.  0.  1.  2.  0.   0.  0.  0.  1.  2.  1.  0.  1.  5.  0.  1.  0.  0.  0.  1.  2.  0.  4.   0.  2.  0.  1.  0.  2.  0.  1.  2.  2.  0.  1.  4.  0.] 43
+>     2 [ 0.  2.  0.  0.  0.  0.  2.  0.  0.  0.  3.  0.  0.  0.  0.  1.  2.  0.   0.  0.  0.  1.  2.  1.  0.  1.  5.  0.  1.  0.  0.  0.  1.  2.  0.  4.   0.  2.  0.  1.  0.  2.  0.  1.  2.  2.  0.  1.  4.  0.] 43
 
-> ...
+>     ...
 
 - set_supply
 
@@ -65,18 +65,18 @@ When setting 'True' in the 'set\_supply' function, the profile is output to the 
 Example:
 > \#docID, the number of annotations that are assigned to the topics(list) and the number of noisy annotation that are assigned in the docId document, the number of annotation in the docID document
 
-> 1 [ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.   0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.   0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  1.] 0.0 1
+>     1 [ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.   0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.   0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  1.] 0.0 1
 
-> 2 [ 0.  0.  1.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.   0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.   0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  1.  0.  0.] 0.0 2
+>     2 [ 0.  0.  1.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.   0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.   0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  1.  0.  0.] 0.0 2
 
-> ...
+>     ...
 
 - inference_prof
 
 When using the 'inference\_prof' function, the profile of inference calculation is output to the console.
 
 Example:
-> <<<---
+>     <<<---
 
 >          3755177 function calls in 4.620 seconds
 
@@ -136,4 +136,4 @@ Example:
 
 > 
 
-> --->>>
+>     --->>>
