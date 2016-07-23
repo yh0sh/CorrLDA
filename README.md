@@ -16,6 +16,11 @@ You can run for this sample data easily in python 2.x.
 
 # Modification
 This source code is made of a C++ wrapper of Python (Cython).
-if you want to modify the source code (corr_lda.pyx), need to prepare the C++ compiler and run a setup.py.
+If you want to modify the source code (corr_lda.pyx), need to prepare the C++ compiler and run a setup.py.
 
 > :python setup.py build_ext --inplace
+
+# Dataset
+The dataset in a sample folder is the articles of the [Qiita](http://qiita.com/) which is the Japanese SNS service for the IT engineers.
+These articles attach a tag about main sentences, so I utilize it for content-related annotations.
+The dataset constitution is based on [UCI Machine Learning Repository: Bag of Words Data Set](http://archive.ics.uci.edu/ml/datasets/Bag+of+Words)
