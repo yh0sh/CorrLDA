@@ -12,14 +12,10 @@ The inference is based on collapsed Gibbs Sampling.
 # How to use
 You can run for this sample data easily in python 2.x.
 
-'''
-:python run.py
-'''
+> :python run.py
 
 # Modification
 This source code is made of a C++ wrapper of Python (Cython).
-If you want to modify the source code (corr_lda.pyx), need to prepare the C++ compiler and run a setup.py.
+if you want to modify the source code (corr_lda.pyx), need to prepare the C++ compiler and run a setup.py.
 
-'''
-:python setup.py build_ext --inplace
-'''
+> :python setup.py build_ext --inplace
